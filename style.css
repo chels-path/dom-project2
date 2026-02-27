@@ -1,0 +1,72 @@
+/* style.css */
+
+/* Container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Heading styling */
+.container h1 {
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Color box styling */
+#color-box {
+    width: 300px;
+    height: 300px;
+    background-color: #3498db; /* Default color (blue) */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    transition: background-color 0.3s ease;
+    border: 3px solid #fff;
+    outline: 2px solid #e0e0e0;
+}
+
+/* Change color button styling */
+#change-color-btn {
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#change-color-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+#change-color-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+#change-color-btn:focus {
+    outline: none;
+}
+
+/* Additional styling for better visual feedback */
+#color-box:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
